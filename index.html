@@ -3,34 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MBL Advocacia | Consultoria e Contencioso no Rio de Janeiro</title>
-  <meta name="description" content="MBL Advocacia — escritório no Rio de Janeiro especializado em consultoria jurídica e contencioso. Atendimento ágil, estratégia clara e eficiência reconhecida.">
-  <meta property="og:title" content="MBL Advocacia | Consultoria e Contencioso">
-  <meta property="og:description" content="Soluções jurídicas rápidas e eficientes no Rio de Janeiro.">
+  <title>MBL Advocacia Estratégica | Rio de Janeiro</title>
+  <meta name="description" content="MBL Advocacia Estratégica — consultoria e contencioso no Rio de Janeiro, com atendimento em todo o Brasil. Experiência a favor do seu futuro.">
+  <meta property="og:title" content="MBL Advocacia Estratégica">
+  <meta property="og:description" content="Experiência a favor do seu futuro. Soluções · Negócios · Resultados.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0b0b0b">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- ===== Sprite: gradiente dourado, logo e ícones ===== -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f7e3a1"/>
+        <stop offset=".45" stop-color="#d4af5a"/>
+        <stop offset=".75" stop-color="#a8812f"/>
+        <stop offset="1" stop-color="#e0c070"/>
+      </linearGradient>
+      <linearGradient id="gold-h" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#a8812f" stop-opacity="0"/>
+        <stop offset=".25" stop-color="#e6c877"/>
+        <stop offset=".7" stop-color="#f7e3a1"/>
+        <stop offset="1" stop-color="#a8812f"/>
+      </linearGradient>
+    </defs>
+    <symbol id="logo" viewBox="0 0 300 110">
+      <text x="150" y="86" text-anchor="middle" font-family="Cinzel, 'Times New Roman', serif" font-weight="700" font-size="92" letter-spacing="2" fill="url(#gold)">MBL</text>
+      <path d="M4 84 C 80 34, 222 28, 298 64 C 222 42, 84 48, 4 84 Z" fill="url(#gold-h)"/>
+    </symbol>
+
+    <symbol id="i-risco" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></symbol>
+    <symbol id="i-estrategia" viewBox="0 0 24 24"><path d="M4 20h16M6 20v-5M10 20v-8M14 20v-6M18 20V6M5 11l4-4 4 3 6-6"/><path d="M16 4h3v3"/></symbol>
+    <symbol id="i-negocio" viewBox="0 0 24 24"><path d="m2 11 4-4 4 1 3-2 3 1 6 4"/><path d="m6 7-3 7 7 6 2-1 2 1 2-1 2 1 3-4-4-5"/><path d="m9 13 3 3m-1-5 4 4m-1-5 3 3"/></symbol>
+    <symbol id="i-patrimonio" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-empresarial" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18M11 12h2v2h-2z"/></symbol>
+    <symbol id="i-contratos" viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5Z"/><path d="M14 3v5h5M8 12h8M8 16h5"/></symbol>
+    <symbol id="i-reestruturacao" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="10" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M6.5 20a5.5 5.5 0 0 1 11 0M1.5 19a3.6 3.6 0 0 1 5-3.3M22.5 19a3.6 3.6 0 0 0-5-3.3"/></symbol>
+    <symbol id="i-societario" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="2.5" y="16" width="6" height="5" rx="1"/><rect x="15.5" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M5.5 16v-4h13v4"/></symbol>
+    <symbol id="i-processual" viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M4 7h16M12 4.5 12 7"/><path d="m6 7-3 7a3 3 0 0 0 6 0L6 7ZM18 7l-3 7a3 3 0 0 0 6 0l-3-7Z"/></symbol>
+    <symbol id="i-consultoria" viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5Z"/><path d="M14 3v5h5M8 13h8M8 17h8M8 9h3"/></symbol>
+    <symbol id="i-analise" viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2.5 2.5 0 0 0-3-1ZM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/><path d="M12 9h2m-2 5h3"/></symbol>
+    <symbol id="i-alvo" viewBox="0 0 24 24"><circle cx="11" cy="13" r="8"/><circle cx="11" cy="13" r="4.5"/><circle cx="11" cy="13" r="1"/><path d="m11 13 8-8m0 0V2m0 3h3"/></symbol>
+    <symbol id="i-precisao" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9l4-6Z"/><path d="M2 9h20M9 3 7.5 9 12 21M15 3l1.5 6L12 21"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-brasil" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></symbol>
+
+    <!-- Rio de Janeiro: Pão de Açúcar, Urca e silhueta da cidade -->
+    <symbol id="rio" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMax slice">
+      <path fill="#1c160d" d="M0 318 C140 290 230 305 330 296 C430 286 520 310 610 304 C700 298 760 280 850 292 C960 305 1100 282 1220 296 C1320 306 1390 296 1440 300 V420 H0Z"/>
+      <path fill="#0f0c08" d="M0 350 H40V318h18v-12h14v12h10v22h16V300h22v-10h12v10h8v50h14V326h20v24h12V310h16v-8h10v48h18V322h14v28h20V296h24v54h10V330h16v20h22V312h12v-10h14v48h16V334h20v16h640 C760 346 800 334 832 318 C856 296 880 272 912 268 C944 264 966 282 984 300 C994 290 1004 250 1022 212 C1046 168 1076 150 1106 150 C1142 150 1170 176 1186 218 C1202 262 1222 318 1262 344 C1300 350 1360 348 1440 348 V420 H0Z"/>
+      <path d="M912 268c16 6 40 18 70 32M1106 150c-26 50-24 130 26 190" stroke="#d4af5a" stroke-opacity=".25" stroke-width="1.2" fill="none"/>
+      <g stroke="#d4af5a" stroke-opacity=".18" stroke-width="1">
+        <path d="M120 372h240M520 384h180M820 366h320M1060 392h260M260 404h300"/>
+      </g>
+    </symbol>
+  </svg>
+
   <!-- ===== Cabeçalho ===== -->
   <header class="header" id="topo">
     <div class="container header__inner">
-      <a href="#topo" class="logo" aria-label="MBL Advocacia — início">
-        <span class="logo__mark">MBL</span>
-        <span class="logo__text">Advocacia</span>
+      <a href="#topo" class="brand" aria-label="MBL Advocacia Estratégica — início">
+        <svg class="brand__logo" viewBox="0 0 300 110" aria-hidden="true"><use href="#logo"/></svg>
+        <span class="brand__name">Advocacia<br>Estratégica</span>
       </a>
       <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="menu">
-        <a href="#sobre">O escritório</a>
-        <a href="#areas">Atuação</a>
-        <a href="#metodo">Como trabalhamos</a>
+        <a href="#visao">Visão</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#diferencial">Diferencial</a>
         <a href="#faq">Dúvidas</a>
         <a href="#contato" class="btn btn--outline btn--sm">Fale conosco</a>
       </nav>
@@ -38,151 +86,179 @@
   </header>
 
   <main>
-    <!-- ===== Hero ===== -->
+    <!-- ===== 1. Hero ===== -->
     <section class="hero">
-      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__sun" aria-hidden="true"></div>
+      <svg class="hero__rio" aria-hidden="true"><use href="#rio"/></svg>
       <div class="container hero__inner">
-        <p class="eyebrow">Rio de Janeiro · Consultoria &amp; Contencioso</p>
-        <h1 class="hero__title">
-          Problemas jurídicos resolvidos com <em>rapidez</em> e <em>precisão</em>.
-        </h1>
+        <svg class="hero__logo" viewBox="0 0 300 110" role="img" aria-label="MBL"><use href="#logo"/></svg>
+        <p class="hero__brand">Advocacia Estratégica</p>
+        <span class="rule" aria-hidden="true"></span>
+        <h1 class="hero__title">Experiência a favor<br>do <span class="gold">seu futuro.</span></h1>
         <p class="hero__lead">
-          A MBL Advocacia atua de forma estratégica para empresas e pessoas físicas,
-          prevenindo riscos na consultoria e defendendo seus interesses no contencioso —
-          com respostas ágeis e comunicação direta do início ao fim.
+          Consultoria e contencioso com visão estratégica, respostas ágeis e
+          eficiência reconhecida. Resolvemos problemas jurídicos com rapidez
+          para que você decida com segurança.
         </p>
         <div class="hero__actions">
-          <a href="https://wa.me/5521900000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20MBL%20Advocacia." class="btn btn--gold" target="_blank" rel="noopener">
-            Agendar consulta pelo WhatsApp
-          </a>
-          <a href="#areas" class="btn btn--ghost">Conheça nossa atuação</a>
+          <a href="https://wa.me/5521900000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20MBL%20Advocacia." class="btn btn--gold" target="_blank" rel="noopener">Agendar consulta</a>
+          <a href="#atuacao" class="btn btn--ghost">Áreas de atuação</a>
         </div>
-        <ul class="hero__stats">
-          <li><strong>24h</strong><span>para o primeiro retorno</span></li>
-          <li><strong>100%</strong><span>transparência no andamento</span></li>
-          <li><strong>RJ</strong><span>atendimento presencial e online</span></li>
+      </div>
+      <p class="tagline hero__tagline">Soluções <i></i> Negócios <i></i> Resultados</p>
+    </section>
+
+    <!-- ===== 2. Contexto ===== -->
+    <section class="section context">
+      <div class="container context__grid">
+        <div class="reveal">
+          <h2 class="title">Todo negócio tem<br>decisões que podem<br>mudar <span class="gold">o seu futuro.</span></h2>
+          <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="reveal">
+          <ul class="words">
+            <li>Contratos.</li>
+            <li>Sociedades.</li>
+            <li>Investimentos.</li>
+            <li>Patrimônio.</li>
+            <li>Conflitos.</li>
+            <li>Reestruturações.</li>
+          </ul>
+          <p class="context__close">É nesse cenário que nasce a <span class="gold serif">MBL Advocacia Estratégica.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Visão ===== -->
+    <section class="section section--alt vision" id="visao">
+      <svg class="vision__column" viewBox="0 0 200 600" aria-hidden="true">
+        <g fill="none" stroke="url(#gold)" stroke-width="1.4">
+          <path d="M20 40h160v18H20zM30 58h140l-10 22H40zM44 80h112v10H44z"/>
+          <path d="M52 90v440M148 90v440M68 96v428M84 96v428M100 96v428M116 96v428M132 96v428"/>
+          <path d="M44 530h112v12H44zM32 542h136v16H32zM20 558h160v22H20z"/>
+        </g>
+      </svg>
+      <div class="container vision__inner">
+        <div class="reveal">
+          <p class="eyebrow">Nossa visão</p>
+          <h2 class="title">Direito não é<br><span class="gold">apenas reação.</span></h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">Uma atuação jurídica estratégica começa antes do problema.</p>
+          <ul class="vision__list">
+            <li>Analisar riscos.</li>
+            <li>Antecipar cenários.</li>
+            <li>Estruturar decisões.</li>
+            <li>Proteger interesses.</li>
+          </ul>
+          <p class="quote">A advocacia passa a fazer parte da estratégia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. Propósito ===== -->
+    <section class="section purpose">
+      <div class="container">
+        <div class="purpose__head reveal">
+          <p class="eyebrow">Nosso propósito</p>
+          <h2 class="title">Transformar complexidade jurídica em clareza <span class="gold">para a tomada de decisão.</span></h2>
+          <p class="lead">A MBL atua a partir da análise técnica do problema, considerando os aspectos que realmente importam para cada realidade.</p>
+        </div>
+        <ul class="pillars reveal">
+          <li><svg class="icon"><use href="#i-risco"/></svg><span>Risco</span></li>
+          <li><svg class="icon"><use href="#i-estrategia"/></svg><span>Estratégia</span></li>
+          <li><svg class="icon"><use href="#i-negocio"/></svg><span>Negócio</span></li>
+          <li><svg class="icon"><use href="#i-patrimonio"/></svg><span>Patrimônio</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- ===== Diferenciais ===== -->
-    <section class="strip" aria-label="Diferenciais">
-      <div class="container strip__inner">
-        <div class="strip__item"><span class="strip__icon">◆</span> Resposta ágil</div>
-        <div class="strip__item"><span class="strip__icon">◆</span> Estratégia sob medida</div>
-        <div class="strip__item"><span class="strip__icon">◆</span> Atendimento pessoal</div>
-        <div class="strip__item"><span class="strip__icon">◆</span> Sigilo absoluto</div>
+    <!-- ===== 5. Atuação ===== -->
+    <section class="section section--alt" id="atuacao">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Nossa atuação</p>
+          <h2 class="title">Uma visão integrada<br><span class="gold">do Direito.</span></h2>
+          <p class="lead">Da consultoria preventiva ao contencioso, cada frente conversa com a outra para proteger você e o seu negócio.</p>
+        </div>
+        <div class="areas">
+          <article class="area reveal">
+            <svg class="icon"><use href="#i-empresarial"/></svg>
+            <h3>Direito Empresarial</h3>
+            <p>Assessoria contínua para empresas, da estruturação às decisões do dia a dia.</p>
+          </article>
+          <article class="area reveal">
+            <svg class="icon"><use href="#i-contratos"/></svg>
+            <h3>Contratos e Negócios</h3>
+            <p>Elaboração, revisão e negociação de contratos com foco em segurança e viabilidade.</p>
+          </article>
+          <article class="area reveal">
+            <svg class="icon"><use href="#i-reestruturacao"/></svg>
+            <h3>Reestruturação e Recuperação</h3>
+            <p>Planejamento e condução de reestruturações para atravessar momentos críticos.</p>
+          </article>
+          <article class="area reveal">
+            <svg class="icon"><use href="#i-societario"/></svg>
+            <h3>Patrimonial e Societário</h3>
+            <p>Organização societária, acordos entre sócios e proteção patrimonial.</p>
+          </article>
+          <article class="area reveal">
+            <svg class="icon"><use href="#i-processual"/></svg>
+            <h3>Estratégia Processual</h3>
+            <p>Contencioso cível e empresarial conduzido com estratégia, firmeza e celeridade.</p>
+          </article>
+          <article class="area reveal">
+            <svg class="icon"><use href="#i-consultoria"/></svg>
+            <h3>Consultoria e Assessoria Jurídica</h3>
+            <p>Pareceres, análise de riscos e orientação para decisões seguras.</p>
+          </article>
+        </div>
+        <p class="tagline areas__foot reveal">Diferentes desafios. <span class="gold">Uma só direção: o seu futuro.</span></p>
       </div>
     </section>
 
-    <!-- ===== Sobre ===== -->
-    <section class="section" id="sobre">
-      <div class="container about">
-        <div class="about__visual reveal">
-          <div class="about__frame">
-            <span class="about__mono">MBL</span>
-            <span class="about__since">Advocacia</span>
-          </div>
-        </div>
-        <div class="about__content reveal">
-          <p class="eyebrow">O escritório</p>
-          <h2 class="section__title">Eficiência reconhecida, <br>atuação que resolve.</h2>
-          <p>
-            Sediada no Rio de Janeiro, a MBL Advocacia nasceu com um propósito claro:
-            entregar soluções jurídicas que funcionam no tempo do cliente. Unimos
-            conhecimento técnico, visão de negócio e uma rotina de trabalho enxuta para
-            reduzir prazos, custos e desgaste.
-          </p>
-          <p>
-            Cada caso é conduzido de perto, com diagnóstico objetivo, plano de ação definido
-            e comunicação transparente em todas as etapas. Você sempre sabe o que está
-            acontecendo — e qual é o próximo passo.
-          </p>
-          <ul class="checklist">
-            <li>Análise inicial rápida e objetiva do seu caso</li>
-            <li>Advogado responsável com contato direto</li>
-            <li>Relatórios claros sobre cada movimentação</li>
+    <!-- ===== 6. Diferencial ===== -->
+    <section class="section" id="diferencial">
+      <div class="container diff">
+        <div class="reveal">
+          <p class="eyebrow">Nosso diferencial</p>
+          <h2 class="title">Experiência a favor<br><span class="gold">do seu futuro.</span></h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">Na MBL, cada questão jurídica exige:</p>
+          <ul class="diff__list">
+            <li><svg class="icon"><use href="#i-analise"/></svg>Análise.</li>
+            <li><svg class="icon"><use href="#i-alvo"/></svg>Estratégia.</li>
+            <li><svg class="icon"><use href="#i-precisao"/></svg>Precisão.</li>
           </ul>
+          <p class="muted">Porque decisões relevantes não devem ser tomadas sem compreender suas consequências jurídicas.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- ===== Áreas ===== -->
-    <section class="section section--dark" id="areas">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">Áreas de atuação</p>
-          <h2 class="section__title">Da prevenção à solução do litígio</h2>
-          <p class="section__sub">Duas frentes complementares para proteger você e o seu negócio.</p>
-        </div>
-
-        <div class="pillars">
-          <article class="pillar reveal">
-            <div class="pillar__num">01</div>
-            <h3>Consultoria Jurídica</h3>
-            <p>Atuação preventiva para decisões seguras e redução de riscos antes que eles virem processos.</p>
-            <ul>
-              <li>Elaboração e revisão de contratos</li>
-              <li>Pareceres e análise de riscos</li>
-              <li>Assessoria empresarial contínua</li>
-              <li>Negociações e acordos extrajudiciais</li>
-              <li>Compliance e adequação regulatória</li>
-            </ul>
-          </article>
-          <article class="pillar reveal">
-            <div class="pillar__num">02</div>
-            <h3>Contencioso</h3>
-            <p>Defesa firme e estratégica em processos judiciais e administrativos, com foco em resultado e celeridade.</p>
-            <ul>
-              <li>Ações cíveis e empresariais</li>
-              <li>Cobranças e execuções</li>
-              <li>Direito do consumidor</li>
-              <li>Responsabilidade civil e indenizações</li>
-              <li>Recursos nos tribunais</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Método ===== -->
-    <section class="section" id="metodo">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">Como trabalhamos</p>
-          <h2 class="section__title">Um método pensado para resolver rápido</h2>
-        </div>
-        <ol class="steps">
-          <li class="step reveal">
-            <span class="step__n">1</span>
-            <h3>Contato</h3>
-            <p>Você nos conta o problema pelo WhatsApp, telefone ou formulário. Retornamos em até 24 horas úteis.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__n">2</span>
-            <h3>Diagnóstico</h3>
-            <p>Analisamos documentos e cenário para apontar caminhos viáveis, riscos e prazos com clareza.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__n">3</span>
-            <h3>Estratégia</h3>
-            <p>Definimos juntos o plano de ação — priorizando sempre a solução mais rápida e eficiente.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__n">4</span>
-            <h3>Execução</h3>
-            <p>Conduzimos o caso de ponta a ponta, com atualizações frequentes até a conclusão.</p>
-          </li>
+        <ol class="steps reveal" aria-label="Como trabalhamos">
+          <li><span>01</span><div><h3>Contato</h3><p>Você nos conta o problema. Retornamos em até 24 horas úteis.</p></div></li>
+          <li><span>02</span><div><h3>Diagnóstico</h3><p>Análise técnica do cenário, dos riscos e dos prazos envolvidos.</p></div></li>
+          <li><span>03</span><div><h3>Estratégia</h3><p>Definimos juntos o caminho mais rápido e eficiente para a solução.</p></div></li>
+          <li><span>04</span><div><h3>Execução</h3><p>Conduzimos o caso de ponta a ponta, com atualizações constantes.</p></div></li>
         </ol>
       </div>
     </section>
 
-    <!-- ===== Chamada ===== -->
-    <section class="cta">
-      <div class="container cta__inner reveal">
-        <h2>Precisa de uma solução jurídica <em>agora</em>?</h2>
-        <p>Converse com um advogado da MBL e receba uma orientação clara sobre o seu caso.</p>
-        <a href="https://wa.me/5521900000000?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica." class="btn btn--gold" target="_blank" rel="noopener">Falar com um advogado</a>
+    <!-- ===== 7. Fechamento ===== -->
+    <section class="closing">
+      <div class="closing__sun" aria-hidden="true"></div>
+      <svg class="closing__rio" aria-hidden="true"><use href="#rio"/></svg>
+      <ul class="closing__words" aria-hidden="true">
+        <li>Pessoas</li><li>Ideias</li><li>Estratégia</li><li>Resultados</li><li>Um futuro</li><li>mais seguro</li>
+      </ul>
+      <div class="container closing__inner reveal">
+        <svg class="closing__logo" viewBox="0 0 300 110" role="img" aria-label="MBL"><use href="#logo"/></svg>
+        <p class="hero__brand">Advocacia Estratégica</p>
+        <p class="tagline">Soluções <i></i> Negócios <i></i> Resultados</p>
+        <span class="rule" aria-hidden="true"></span>
+        <h2 class="closing__title">O Direito como parte da estratégia.</h2>
+        <a href="https://wa.me/5521900000000?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica." class="btn btn--gold" target="_blank" rel="noopener">Falar com a MBL</a>
+      </div>
+      <div class="container closing__foot">
+        <span><svg class="icon icon--sm"><use href="#i-pin"/></svg>Rio de Janeiro – RJ</span>
+        <span><svg class="icon icon--sm"><use href="#i-brasil"/></svg>Atendimento em todo o Brasil</span>
+        <span class="closing__motto">Mais que Direito,<br>parceria para o seu futuro.</span>
       </div>
     </section>
 
@@ -191,36 +267,36 @@
       <div class="container container--narrow">
         <div class="section__head reveal">
           <p class="eyebrow">Dúvidas frequentes</p>
-          <h2 class="section__title">Perguntas comuns</h2>
+          <h2 class="title">Perguntas comuns</h2>
         </div>
         <div class="faq">
           <details class="reveal">
             <summary>Vocês atendem apenas no Rio de Janeiro?</summary>
-            <p>Nossa sede fica no Rio de Janeiro, com atendimento presencial. Também atendemos clientes de outras localidades de forma online, com a mesma agilidade.</p>
+            <p>Nossa sede fica no Rio de Janeiro, com atendimento presencial, e atendemos clientes em todo o Brasil de forma online.</p>
           </details>
           <details class="reveal">
             <summary>Atendem empresas e pessoas físicas?</summary>
-            <p>Sim. Prestamos consultoria e atuamos no contencioso tanto para empresas de diversos portes quanto para pessoas físicas.</p>
+            <p>Sim. Atuamos para empresas de diferentes portes, sócios, investidores e pessoas físicas, tanto na consultoria quanto no contencioso.</p>
           </details>
           <details class="reveal">
             <summary>Quanto tempo leva para ter um retorno?</summary>
-            <p>O primeiro retorno é feito em até 24 horas úteis após o contato. Durante o caso, você recebe atualizações a cada movimentação relevante.</p>
+            <p>O primeiro retorno é feito em até 24 horas úteis. Durante o caso, você recebe atualizações a cada movimentação relevante.</p>
           </details>
           <details class="reveal">
             <summary>Como são definidos os honorários?</summary>
-            <p>Os honorários são apresentados de forma transparente após a análise inicial, de acordo com a complexidade do caso e em conformidade com a tabela da OAB/RJ.</p>
+            <p>Os honorários são apresentados de forma transparente após a análise inicial, conforme a complexidade do caso e a tabela da OAB/RJ.</p>
           </details>
         </div>
       </div>
     </section>
 
     <!-- ===== Contato ===== -->
-    <section class="section section--dark" id="contato">
+    <section class="section section--alt" id="contato">
       <div class="container contact">
         <div class="contact__info reveal">
           <p class="eyebrow">Contato</p>
-          <h2 class="section__title">Vamos resolver o seu caso.</h2>
-          <p>Preencha o formulário e nossa equipe entrará em contato. Se preferir, fale diretamente pelos canais abaixo.</p>
+          <h2 class="title">Vamos conversar sobre<br><span class="gold">o seu caso.</span></h2>
+          <p class="lead">Preencha o formulário ou fale diretamente pelos canais abaixo.</p>
           <ul class="contact__list">
             <li><span>WhatsApp</span><a href="https://wa.me/5521900000000" target="_blank" rel="noopener">(21) 90000-0000</a></li>
             <li><span>E-mail</span><a href="mailto:contato@mbladvocacia.com.br">contato@mbladvocacia.com.br</a></li>
@@ -248,9 +324,12 @@
             <label for="area">Assunto</label>
             <select id="area" name="area" required>
               <option value="" disabled selected>Selecione</option>
-              <option>Consultoria jurídica</option>
-              <option>Contencioso / processo judicial</option>
-              <option>Contratos</option>
+              <option>Direito Empresarial</option>
+              <option>Contratos e Negócios</option>
+              <option>Reestruturação e Recuperação</option>
+              <option>Patrimonial e Societário</option>
+              <option>Estratégia Processual (contencioso)</option>
+              <option>Consultoria e Assessoria Jurídica</option>
               <option>Outro assunto</option>
             </select>
           </div>
@@ -272,16 +351,13 @@
   <!-- ===== Rodapé ===== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="#topo" class="logo">
-        <span class="logo__mark">MBL</span>
-        <span class="logo__text">Advocacia</span>
-      </a>
-      <p>Consultoria e Contencioso · Rio de Janeiro/RJ</p>
-      <p class="footer__legal">OAB/RJ nº 000.000 · © <span id="ano"></span> MBL Advocacia. Todos os direitos reservados.</p>
+      <svg class="footer__logo" viewBox="0 0 300 110" role="img" aria-label="MBL"><use href="#logo"/></svg>
+      <p class="hero__brand">Advocacia Estratégica</p>
+      <p class="tagline">Soluções <i></i> Negócios <i></i> Resultados</p>
+      <p class="footer__legal">OAB/RJ nº 000.000 · © <span id="ano"></span> MBL Advocacia Estratégica. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <!-- Botão flutuante WhatsApp -->
   <a href="https://wa.me/5521900000000" class="wa-float" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
     <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.38 4 15.02c0 2.12.56 4.19 1.62 6.01L4 29l8.17-1.6a12 12 0 0 0 3.87.64C22.67 28.04 28 22.66 28 16.02 28 9.38 22.67 3 16.04 3Zm0 22.9c-1.26 0-2.5-.22-3.67-.66l-.26-.1-4.85.95.97-4.72-.17-.28a9.86 9.86 0 0 1-1.52-5.27c0-5.47 4.47-9.93 9.5-9.93 5.52 0 9.8 4.46 9.8 9.93 0 5.6-4.28 10.08-9.8 10.08Zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
   </a>

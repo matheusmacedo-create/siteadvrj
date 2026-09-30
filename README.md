@@ -1,6 +1,6 @@
-# MBL Advocacia — Landing Page
+# MBL Advocacia Estratégica — Landing Page
 
-Landing page estática (HTML + CSS + JS, sem dependências) para a MBL Advocacia,
+Landing page estática (HTML + CSS + JS, sem dependências) para a MBL Advocacia Estratégica,
 escritório no Rio de Janeiro especializado em consultoria e contencioso.
 Identidade visual preto e dourado.
 
@@ -28,3 +28,12 @@ python3 -m http.server 8000
 
 Por ser um site estático, pode ser publicado em Vercel, Netlify, GitHub Pages
 ou Hostinger, bastando enviar os arquivos da raiz.
+
+## Identidade visual
+
+Baseada no protótipo aprovado (nome corrigido de "MLB" para **MBL**):
+
+- Logo "MBL" com curva dourada, desenhado em SVG (`#logo` no topo do `index.html`)
+- Fontes: Cinzel (títulos) e Montserrat (texto), via Google Fonts
+- Assinatura: "Experiência a favor do seu futuro" · Soluções | Negócios | Resultados
+- Ilustração do Pão de Açúcar ao pôr do sol em SVG (`#rio`); pode ser trocada por foto real
