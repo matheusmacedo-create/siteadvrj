@@ -31,7 +31,11 @@ const sentinel = document.createElement("div");
 sentinel.setAttribute("aria-hidden", "true");
 sentinel.style.cssText = "position:absolute;top:0;left:0;width:1px;height:20px;pointer-events:none";
 document.body.prepend(sentinel);
-new IntersectionObserver(([e]) => header.classList.toggle("is-scrolled", !e.isIntersecting)).observe(sentinel);
+if ("IntersectionObserver" in window) {
+  new IntersectionObserver(([e]) => header.classList.toggle("is-scrolled", !e.isIntersecting)).observe(sentinel);
+} else {
+  header.classList.add("is-scrolled");
+}
 
 // Menu mobile
 const toggle = document.querySelector(".nav-toggle");

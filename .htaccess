@@ -37,3 +37,8 @@ AddType application/manifest+json .webmanifest
 </IfModule>
 
 ErrorDocument 404 /404.html
+
+# Arquivos internos do projeto não devem ser servidos
+<FilesMatch "^(README\.md|\.vercelignore|vercel\.json)$">
+  Require all denied
+</FilesMatch>
