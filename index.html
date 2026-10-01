@@ -204,7 +204,7 @@
     .vision__portico {
       position: absolute; right: 6%; top: 50%; transform: translateY(-50%);
       height: 80%; display: flex; gap: clamp(48px, 6vw, 104px);
-      opacity: .35; pointer-events: none;
+      opacity: .55; pointer-events: none;
     }
     .vision__portico svg { height: 100%; width: auto; }
     .vision__inner { position: relative; }
@@ -241,6 +241,12 @@
     .area:hover { background: var(--black-3); }
     .area:hover::before { width: 100%; }
     .area .icon { width: 34px; height: 34px; margin-bottom: 1.4rem; }
+    .area--wide { grid-column: 1 / -1; display: flex; gap: 1.6rem; align-items: flex-start; }
+    .area--wide .icon { width: 40px; height: 40px; margin: 0; }
+    .ornament { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 1.8rem auto; }
+    .ornament::before, .ornament::after { content: ""; width: 44px; height: 1px; background: linear-gradient(90deg, rgba(212,175,90,0), var(--gold)); }
+    .ornament::after { transform: scaleX(-1); }
+    .ornament .tri { width: 13px; height: 12px; margin: 0; }
     .area h3 { font-size: 1.15rem; letter-spacing: .03em; color: var(--gold-light); }
     .area p { color: var(--muted); font-size: .94rem; margin: 0; }
     .areas__foot { margin-top: 3rem; font-size: .8rem; }
@@ -421,6 +427,8 @@
       .tagline { letter-spacing: .16em; gap: .4rem .6rem; }
       .hero__tagline { padding-inline: 16px; }
       .hero__title { font-size: 7.6vw; }
+      .area--wide { flex-direction: column; gap: 0; }
+      .area--wide .icon { width: 34px; height: 34px; margin-bottom: 1.4rem; }
       .closing__foot { flex-direction: column; align-items: center; }
       .closing__motto { margin: 1rem auto 0; text-align: center; }
       .diff__list li { letter-spacing: .2em; }
@@ -448,7 +456,7 @@
       "@id": "https://www.mbladvocacia.com.br/#escritorio",
       "name": "MBL Advocacia Estratégica",
       "legalName": "[Razão social registrada na OAB/RJ]",
-      "description": "Escritório de advocacia no Rio de Janeiro com atuação em consultoria jurídica empresarial, contratos, direito societário, reestruturação de empresas e contencioso cível e empresarial, com atendimento em todo o Brasil.",
+      "description": "Escritório de advocacia no Rio de Janeiro com atuação em consultoria jurídica empresarial, contratos, direito societário, reestruturação de empresas, contencioso cível e empresarial e direito marítimo, com atendimento em todo o Brasil.",
       "url": "https://www.mbladvocacia.com.br/",
       "logo": {
         "@type": "ImageObject",
@@ -507,7 +515,8 @@
         "Reestruturação e Recuperação de Empresas",
         "Direito Societário e Patrimonial",
         "Contencioso Cível e Empresarial",
-        "Consultoria e Assessoria Jurídica"
+        "Consultoria e Assessoria Jurídica",
+        "Direito Marítimo e Naval"
       ],
       "identifier": {
         "@type": "PropertyValue",
@@ -603,6 +612,7 @@
     <symbol id="i-esquadro" viewBox="0 0 24 24"><path d="M4 3v17h17v-3.2H7.2V3H4Z"/><path d="M7.2 7H5.6M7.2 10.5H5.6M7.2 14H5.6M10.5 16.8v1.6M14 16.8v1.6M17.5 16.8v1.6"/></symbol>
     <symbol id="i-prumo" viewBox="0 0 24 24"><path d="M7 3.5h10M12 3.5V12"/><path d="M12 12c1.7 0 2.7 1 2.7 2.3 0 1.7-1.4 3.6-2.7 6.4-1.3-2.8-2.7-4.7-2.7-6.4 0-1.3 1-2.3 2.7-2.3Z"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-ancora" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M12 6.5V21M8 10h8M4.5 13.5a7.5 7.5 0 0 0 15 0M3 15.5l1.5-2 2 1.5M21 15.5l-1.5-2-2 1.5"/></symbol>
     <symbol id="i-tri" viewBox="0 0 12 11"><circle cx="6" cy="2" r="1.6"/><circle cx="2" cy="9" r="1.6"/><circle cx="10" cy="9" r="1.6"/></symbol>
     <symbol id="coluna" viewBox="0 0 200 600">
       <g fill="none" stroke="url(#gold)" stroke-width="1.4">
@@ -768,6 +778,13 @@
             <h3>Consultoria e Assessoria Jurídica</h3>
             <p>Pareceres, análise de riscos e orientação jurídica para decisões bem fundamentadas.</p>
           </article>
+          <article class="area area--wide reveal">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ancora"/></svg>
+            <div>
+              <h3>Direito Marítimo e Naval</h3>
+              <p>Contratos de transporte marítimo e afretamento, operações portuárias, avarias, seguros e cargas, com atuação no Judiciário e perante o Tribunal Marítimo.</p>
+            </div>
+          </article>
         </div>
         <p class="tagline areas__foot reveal">Diferentes desafios. <span class="gold">Uma só direção: o seu futuro.</span></p>
       </div>
@@ -808,7 +825,7 @@
         <svg class="closing__logo" viewBox="0 0 300 110" role="img" aria-label="MBL"><use href="#logo"/></svg>
         <p class="hero__brand">Advocacia Estratégica</p>
         <p class="tagline">Soluções <i></i> Negócios <i></i> Resultados</p>
-        <span class="rule" aria-hidden="true"></span>
+        <span class="ornament" aria-hidden="true"><svg class="tri" focusable="false"><use href="#i-tri"/></svg></span>
         <h2 class="closing__title">O Direito como parte da estratégia.</h2>
         <a href="https://wa.me/5521900000000?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica." class="btn btn--gold" target="_blank" rel="noopener">Falar com a MBL</a>
       </div>
@@ -887,6 +904,7 @@
               <option>Direito Societário e Patrimonial</option>
               <option>Contencioso Cível e Empresarial</option>
               <option>Consultoria e Assessoria Jurídica</option>
+              <option>Direito Marítimo e Naval</option>
               <option>Outro assunto</option>
             </select>
           </div>
