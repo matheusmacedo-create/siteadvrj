@@ -1,0 +1,20 @@
+/* Páginas simples (404, privacidade) — mesma identidade da página principal */
+@font-face { font-family: "Cinzel"; src: url(../fonts/cinzel-latin-500-600.woff2) format("woff2"); font-weight: 500 600; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url(../fonts/montserrat-latin-300-600.woff2) format("woff2"); font-weight: 300 600; font-display: swap; }
+:root { color-scheme: dark; --gold: #d4af5a; --gold-light: #ecd08a; --text: #eee8dc; --muted: #a8a194; --line: rgba(212,175,90,.22); }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #0a0a0a; color: var(--text); font-family: "Montserrat", system-ui, sans-serif; font-weight: 300; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+a { color: var(--gold-light); }
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.wrap { width: min(780px, 100% - 32px); margin-inline: auto; padding: 48px 0 72px; }
+.top { display: flex; align-items: center; gap: .9rem; margin-bottom: 56px; text-decoration: none; }
+.top svg { width: 92px; height: 34px; }
+.top span { font-size: .58rem; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); border-left: 1px solid var(--line); padding-left: .9rem; line-height: 1.5; }
+h1, h2 { font-family: "Cinzel", "Times New Roman", serif; font-weight: 600; line-height: 1.2; text-transform: uppercase; letter-spacing: .02em; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); margin: 0 0 .4em; }
+h2 { font-size: 1.05rem; color: var(--gold); margin: 2.2em 0 .6em; letter-spacing: .08em; }
+p, li { color: var(--muted); }
+strong { color: var(--text); font-weight: 500; }
+.rule { display: block; width: 56px; height: 2px; background: linear-gradient(135deg,#f1d98b,#d4af5a 45%,#a8812f); margin: 1.4rem 0 1.8rem; }
+.btn { display: inline-block; margin-top: 1.6rem; padding: 1em 1.8em; background: linear-gradient(135deg,#f1d98b,#d4af5a 45%,#a8812f); color: #111; text-decoration: none; font-weight: 600; font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; border-radius: 2px; }
+.foot { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); font-size: .78rem; color: var(--muted); }

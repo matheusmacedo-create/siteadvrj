@@ -3,18 +3,559 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MBL Advocacia Estratégica | Rio de Janeiro</title>
-  <meta name="description" content="MBL Advocacia Estratégica — consultoria e contencioso no Rio de Janeiro, com atendimento em todo o Brasil. Experiência a favor do seu futuro.">
-  <meta property="og:title" content="MBL Advocacia Estratégica">
-  <meta property="og:description" content="Experiência a favor do seu futuro. Soluções · Negócios · Resultados.">
+  <title>Advocacia Empresarial no Rio de Janeiro | MBL Advocacia</title>
+  <meta name="description" content="Escritório de advocacia no Rio de Janeiro: consultoria jurídica empresarial, direito societário, reestruturação de empresas e contencioso cível e empresarial.">
+  <!-- Domínio provisório: troque https://www.mbladvocacia.com.br aqui, no JSON-LD, em robots.txt e em sitemap.xml -->
+  <link rel="canonical" href="https://www.mbladvocacia.com.br/">
+  <meta name="robots" content="max-image-preview:large">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="MBL Advocacia Estratégica">
+  <meta property="og:url" content="https://www.mbladvocacia.com.br/">
+  <meta property="og:title" content="MBL Advocacia Estratégica | Advocacia empresarial no Rio de Janeiro">
+  <meta property="og:description" content="Experiência a favor do seu futuro. Consultoria jurídica e contencioso cível e empresarial no Rio de Janeiro, com atendimento em todo o Brasil.">
+  <meta property="og:image" content="https://www.mbladvocacia.com.br/assets/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logotipo MBL em dourado sobre fundo preto, com os dizeres Advocacia Estratégica, Experiência a favor do seu futuro, Rio de Janeiro, atendimento em todo o Brasil.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Logotipo MBL em dourado sobre fundo preto, com os dizeres Advocacia Estratégica, Experiência a favor do seu futuro, Rio de Janeiro, atendimento em todo o Brasil.">
   <meta name="theme-color" content="#0a0a0a">
+  <meta name="color-scheme" content="dark">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
   <script>document.documentElement.classList.add("js");addEventListener("load",function(){if(!window.mblReveal)document.documentElement.classList.remove("js")})</script>
   <link rel="preload" href="fonts/cinzel-latin-500-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/montserrat-latin-300-600.woff2" as="font" type="font/woff2" crossorigin>
   <script src="script.js" defer></script>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ===== MBL Advocacia Estratégica — preto & dourado ===== */
+    /* ===== Fontes (auto-hospedadas, subset latin, variáveis — licença OFL em fonts/OFL.txt) ===== */
+    @font-face { font-family: "Cinzel"; src: url(fonts/cinzel-latin-500-600.woff2) format("woff2"); font-weight: 500 600; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2022, U+2026, U+2039-203A, U+20AC, U+2122; }
+    @font-face { font-family: "Montserrat"; src: url(fonts/montserrat-latin-300-600.woff2) format("woff2"); font-weight: 300 600; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2022, U+2026, U+2039-203A, U+20AC, U+2122; }
+    /* Fallbacks com métricas ajustadas: evitam salto de layout enquanto a fonte carrega */
+    @font-face { font-family: "Montserrat Fallback"; src: local("Arial"), local("ArialMT"), local("Liberation Sans"), local("LiberationSans"), local("Arimo"); font-weight: 300 500; size-adjust: 108.7%; ascent-override: 89%; descent-override: 23.1%; line-gap-override: 0%; }
+    @font-face { font-family: "Montserrat Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Liberation Sans Bold"), local("LiberationSans-Bold"), local("Arimo Bold"); font-weight: 600 700; size-adjust: 104.3%; ascent-override: 92.8%; descent-override: 24.1%; line-gap-override: 0%; }
+    @font-face { font-family: "Montserrat Fallback R"; src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"); font-weight: 300 500; size-adjust: 110.9%; ascent-override: 87.3%; descent-override: 22.6%; line-gap-override: 0%; }
+    @font-face { font-family: "Montserrat Fallback R"; src: local("Roboto Bold"), local("Roboto-Bold"); font-weight: 600 700; size-adjust: 113.5%; ascent-override: 85.3%; descent-override: 22.1%; line-gap-override: 0%; }
+    @font-face { font-family: "Cinzel Fallback"; src: local("Times New Roman"), local("TimesNewRomanPSMT"), local("Liberation Serif"), local("LiberationSerif"), local("Tinos"); font-weight: 300 500; size-adjust: 111.4%; ascent-override: 87.6%; descent-override: 33.4%; line-gap-override: 0%; }
+    @font-face { font-family: "Cinzel Fallback"; src: local("Times New Roman Bold"), local("TimesNewRomanPS-BoldMT"), local("Liberation Serif Bold"), local("LiberationSerif-Bold"), local("Tinos Bold"); font-weight: 600 700; size-adjust: 110.9%; ascent-override: 88%; descent-override: 33.6%; line-gap-override: 0%; }
+    @font-face { font-family: "Cinzel Fallback R"; src: local("Noto Serif"), local("NotoSerif-Regular"); font-weight: 300 500; size-adjust: 107.5%; ascent-override: 90.8%; descent-override: 34.6%; line-gap-override: 0%; }
+    @font-face { font-family: "Cinzel Fallback R"; src: local("Noto Serif Bold"), local("NotoSerif-Bold"); font-weight: 600 700; size-adjust: 104.5%; ascent-override: 93.4%; descent-override: 35.6%; line-gap-override: 0%; }
+
+    :root {
+      color-scheme: dark;
+      --black: #0a0a0a;
+      --black-2: #111010;
+      --black-3: #191715;
+      --line: rgba(212, 175, 90, 0.22);
+      --gold: #d4af5a;
+      --gold-light: #ecd08a;
+      --gold-dark: #a8812f;
+      --gold-grad: linear-gradient(180deg, #f7e3a1 0%, #d4af5a 45%, #a8812f 80%, #e0c070 100%);
+      --gold-btn: linear-gradient(135deg, #f1d98b 0%, #d4af5a 45%, #a8812f 100%);
+      --text: #eee8dc;
+      --muted: #a8a194;
+      --serif: "Cinzel", "Cinzel Fallback", "Cinzel Fallback R", "Times New Roman", serif;
+      --sans: "Montserrat", "Montserrat Fallback", "Montserrat Fallback R", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --radius: 2px;
+      --header-h: 80px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+    body {
+      margin: 0; background: var(--black); color: var(--text);
+      font-family: var(--sans); font-weight: 300; line-height: 1.75;
+      -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.18; margin: 0 0 .6em; }
+    p { margin: 0 0 1em; }
+
+    .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .container { width: min(1180px, 100% - 32px); margin-inline: auto; }
+    .container--narrow { width: min(820px, 100% - 32px); }
+
+    .gold { color: var(--gold); }
+    @supports (-webkit-background-clip: text) or (background-clip: text) {
+      .gold { background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    }
+    .serif { font-family: var(--serif); font-weight: 600; }
+    .muted { color: var(--muted); }
+    .lead { color: var(--muted); font-size: 1.05rem; max-width: 60ch; }
+
+    .eyebrow {
+      font-size: .76rem; letter-spacing: .3em; text-transform: uppercase;
+      color: var(--gold); font-weight: 500; margin-bottom: 1.2em;
+    }
+    .title { font-size: clamp(1.9rem, 3.8vw, 3rem); text-transform: uppercase; letter-spacing: .02em; }
+    .rule { display: block; width: 56px; height: 2px; background: var(--gold-btn); margin: 1.4rem 0 1.8rem; }
+
+    .tagline {
+      display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: .4rem 1.2rem;
+      font-size: .78rem; letter-spacing: .32em; text-transform: uppercase; color: var(--text); margin: 0;
+    }
+    .tagline i { width: 1px; height: 14px; background: var(--gold); display: inline-block; }
+
+    .icon {
+      width: 28px; height: 28px; flex: none;
+      fill: none; stroke: var(--gold); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .icon--sm { width: 16px; height: 16px; }
+
+    /* ===== Botões ===== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 1.05em 2em; font-family: var(--sans); font-size: .8rem; font-weight: 600;
+      letter-spacing: .18em; text-transform: uppercase;
+      border-radius: var(--radius); border: 1px solid transparent; cursor: pointer;
+      transition: transform .25s, box-shadow .25s, background .25s, color .25s, border-color .25s;
+    }
+    .btn--gold { background: var(--gold-btn); color: #111; box-shadow: 0 10px 30px -10px rgba(212,175,90,.55); }
+    .btn--gold:hover { transform: translateY(-2px); box-shadow: 0 16px 40px -12px rgba(212,175,90,.8); }
+    .btn--ghost { border-color: var(--line); color: var(--text); }
+    .btn--ghost:hover { border-color: var(--gold); color: var(--gold-light); }
+    .btn--outline { border-color: var(--gold); color: var(--gold); }
+    .btn--outline:hover { background: var(--gold); color: #111; }
+    .btn--sm { padding: .7em 1.3em; font-size: .7rem; }
+    .btn--block { width: 100%; }
+
+    /* ===== Header ===== */
+    .header {
+      position: fixed; inset: 0 0 auto; z-index: 50; height: var(--header-h);
+      display: flex; align-items: center; border-bottom: 1px solid transparent;
+      transition: background .3s, border-color .3s;
+    }
+    .header.is-scrolled { background: rgba(10,10,10,.92); backdrop-filter: blur(10px); border-color: var(--line); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: .9rem; }
+    .brand__logo { width: 92px; height: 34px; }
+    .brand__name {
+      font-size: .58rem; letter-spacing: .3em; text-transform: uppercase; color: var(--muted);
+      line-height: 1.5; border-left: 1px solid var(--line); padding-left: .9rem;
+    }
+    .nav { display: flex; align-items: center; gap: 2.2rem; }
+    .nav a:not(.btn) {
+      font-size: .76rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted);
+      position: relative; transition: color .2s;
+    }
+    .nav a:not(.btn)::after {
+      content: ""; position: absolute; left: 0; bottom: -6px; width: 0; height: 1px; background: var(--gold); transition: width .25s;
+    }
+    .nav a:not(.btn):hover { color: var(--text); }
+    .nav a:not(.btn):hover::after { width: 100%; }
+    .nav-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; margin: 5px 0; background: var(--gold); transition: transform .3s, opacity .3s; }
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ===== Hero ===== */
+    .hero {
+      position: relative; overflow: hidden; isolation: isolate;
+      min-height: 100vh; min-height: 100svh;
+      display: flex; flex-direction: column; justify-content: center;
+      padding: calc(var(--header-h) + 40px) 0 0;
+      background: linear-gradient(180deg, #0a0a0a 0%, #0f0c09 45%, #2a1e0e 78%, #3b2a12 88%, #0a0a0a 100%);
+    }
+    .hero__sun {
+      position: absolute; z-index: -1; right: 18%; bottom: 14%; width: 520px; height: 520px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,214,140,.55) 0%, rgba(230,160,70,.22) 22%, rgba(212,175,90,0) 62%);
+      transform: translate(50%, 50%);
+    }
+    .hero__rio { position: absolute; z-index: -1; left: 0; bottom: 0; width: 100%; height: 46%; --sea-opacity: .1; }
+    .hero::after {
+      content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+      background: linear-gradient(90deg, rgba(10,10,10,.9) 0%, rgba(10,10,10,.55) 45%, rgba(10,10,10,0) 75%);
+    }
+    .hero__inner { position: relative; padding-bottom: 22vh; }
+    .hero__logo { width: clamp(200px, 26vw, 320px); height: auto; aspect-ratio: 300 / 110; display: block; margin-left: -6px; }
+    .hero__brand {
+      font-family: var(--serif); font-size: clamp(.8rem, 1.3vw, 1rem); letter-spacing: .42em;
+      text-transform: uppercase; color: var(--gold); margin: .4rem 0 0;
+    }
+    .hero__eyebrow { color: var(--muted); margin: 0 0 1rem; }
+    .hero__title { font-size: clamp(2.2rem, 5.2vw, 4.2rem); text-transform: uppercase; font-weight: 500; letter-spacing: .02em; }
+    .hero__lead { color: var(--muted); max-width: 540px; font-size: clamp(.98rem, 1.4vw, 1.08rem); margin-bottom: 2.2rem; }
+    .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .hero__tagline { position: absolute; left: 0; right: 0; bottom: 34px; }
+
+    /* ===== Seções ===== */
+    .section { padding: clamp(84px, 11vw, 140px) 0; position: relative; }
+    .section--alt { background: var(--black-2); border-block: 1px solid rgba(212,175,90,.08); }
+    .section__head { max-width: 700px; margin-bottom: 3.5rem; }
+
+    /* Contexto */
+    .context__grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
+    .words { list-style: none; margin: 0 0 2rem; padding: 0; }
+    .words li {
+      font-size: clamp(1.05rem, 1.6vw, 1.25rem); padding: .55rem 0; border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .words li::before { content: ""; display: inline-block; width: 18px; height: 1px; background: var(--gold); vertical-align: middle; margin-right: 1rem; }
+    .context__close { font-size: 1.1rem; color: var(--muted); }
+    .context__close .gold { font-size: 1.15rem; }
+
+    /* Visão */
+    .vision { overflow: hidden; }
+    .vision__portico {
+      position: absolute; right: 6%; top: 50%; transform: translateY(-50%);
+      height: 80%; display: flex; gap: clamp(48px, 6vw, 104px);
+      opacity: .35; pointer-events: none;
+    }
+    .vision__portico svg { height: 100%; width: auto; }
+    .vision__inner { position: relative; }
+    .vision__list { list-style: none; padding: 0; margin: 2rem 0; display: grid; gap: .6rem; }
+    .vision__list li { font-size: 1.1rem; padding-left: 1.6rem; position: relative; }
+    .vision__list li::before {
+      content: ""; position: absolute; left: 0; top: .72em; width: 7px; height: 7px; background: var(--gold); transform: rotate(45deg);
+    }
+    .quote {
+      font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.5rem); color: var(--gold-light);
+      border-left: 2px solid var(--gold); padding-left: 1.2rem; max-width: 520px; margin: 0;
+    }
+
+    /* Propósito */
+    .purpose__head { max-width: 820px; margin-bottom: 4rem; }
+    .pillars {
+      list-style: none; padding: 0; margin: 0;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      border-block: 1px solid var(--line);
+    }
+    .pillars li {
+      display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 2.4rem 1rem;
+      font-size: .78rem; letter-spacing: .28em; text-transform: uppercase;
+    }
+    .pillars li + li { border-left: 1px solid var(--line); }
+    .pillars .icon { width: 40px; height: 40px; stroke-width: 1.2; }
+
+    /* Atuação */
+    .areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .area { background: var(--black-2); padding: clamp(28px, 3.5vw, 44px); transition: background .3s; position: relative; }
+    .area::before {
+      content: ""; position: absolute; left: 0; top: 0; height: 2px; width: 0; background: var(--gold-btn); transition: width .5s;
+    }
+    .area:hover { background: var(--black-3); }
+    .area:hover::before { width: 100%; }
+    .area .icon { width: 34px; height: 34px; margin-bottom: 1.4rem; }
+    .area h3 { font-size: 1.15rem; letter-spacing: .03em; color: var(--gold-light); }
+    .area p { color: var(--muted); font-size: .94rem; margin: 0; }
+    .areas__foot { margin-top: 3rem; font-size: .8rem; }
+
+    /* Diferencial */
+    .diff { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
+    .diff__list { list-style: none; padding: 0; margin: 0 0 2rem; display: grid; gap: 1.3rem; }
+    .diff__list li { display: flex; align-items: center; gap: 1.4rem; font-size: 1rem; letter-spacing: .3em; text-transform: uppercase; }
+    .diff__list .icon { width: 38px; height: 38px; stroke-width: 1.2; }
+    .steps { list-style: none; padding: 0; margin: 0; border-left: 1px solid var(--line); }
+    .steps li { display: flex; gap: 1.6rem; padding: 1.4rem 0 1.4rem 2rem; position: relative; }
+    .steps li::before {
+      content: ""; position: absolute; left: -5px; top: 2.1rem; width: 9px; height: 9px; background: var(--black); border: 1px solid var(--gold); transform: rotate(45deg);
+    }
+    .steps span { flex: 0 0 2.4rem; font-family: var(--serif); font-size: 1.6rem; color: var(--gold-dark); line-height: 1.3; }
+    .steps h3 { font-size: 1.15rem; margin-bottom: .3rem; text-transform: uppercase; letter-spacing: .06em; }
+    .steps p { margin: 0; color: var(--muted); font-size: .94rem; }
+
+    /* Fechamento */
+    .closing {
+      position: relative; overflow: hidden; isolation: isolate; text-align: center;
+      padding: clamp(100px, 13vw, 170px) 0 40px;
+      background: linear-gradient(180deg, #0a0a0a 0%, #1b140b 40%, #4a3314 70%, #2a1d0c 82%, #0a0a0a 100%);
+    }
+    .closing__sun {
+      position: absolute; z-index: -1; left: 62%; top: 80%; width: 720px; height: 720px; border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255,220,150,.55) 0%, rgba(240,170,80,.22) 20%, rgba(212,175,90,0) 60%);
+    }
+    .closing__rio { position: absolute; z-index: -1; left: 0; bottom: 0; width: 100%; height: 55%; --sea-opacity: 0; }
+    .closing::after {
+      content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+      background: radial-gradient(ellipse 60% 55% at 50% 42%, rgba(10,10,10,.75), rgba(10,10,10,0) 70%);
+    }
+    .closing__words {
+      position: absolute; right: max(16px, (100% - 1180px) / 2); top: 40px; list-style: none; margin: 0; padding: 0 0 0 1rem;
+      border-left: 1px solid var(--line); text-align: left;
+      font-size: .62rem; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); line-height: 2;
+    }
+    .closing__inner { display: flex; flex-direction: column; align-items: center; }
+    .closing__logo { width: clamp(220px, 30vw, 380px); height: auto; aspect-ratio: 300 / 110; }
+    .closing__inner .hero__brand { margin-bottom: 1.6rem; }
+    .closing__inner .rule { margin: 1.8rem auto; }
+    .closing__title { font-size: clamp(1.1rem, 2.2vw, 1.6rem); text-transform: uppercase; letter-spacing: .12em; font-weight: 500; margin-bottom: 2.2rem; }
+    .closing__foot {
+      display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem 2rem;
+      margin-top: clamp(80px, 12vw, 160px); font-size: .76rem; color: var(--text); letter-spacing: .05em;
+    }
+    .closing__foot > span:not(.closing__motto) { display: inline-flex; align-items: center; gap: .5rem; }
+    .closing__motto {
+      margin-left: auto; text-align: right; font-size: .66rem; letter-spacing: .26em; text-transform: uppercase;
+      color: var(--gold); line-height: 1.8; border-top: 1px solid var(--gold); padding-top: .6rem; display: block;
+    }
+
+    /* FAQ */
+    .faq { display: grid; gap: 1rem; }
+    .faq details { border: 1px solid var(--line); background: var(--black-2); transition: border-color .3s; }
+    .faq details[open] { border-color: rgba(212,175,90,.55); }
+    .faq summary {
+      list-style: none; cursor: pointer; padding: 1.3rem 1.6rem; font-weight: 500; font-size: 1rem;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; color: var(--gold); font-size: 1.6rem; font-weight: 300; transition: transform .3s; }
+    .faq details[open] summary::after { transform: rotate(45deg); }
+    .faq details p { padding: 0 1.6rem 1.4rem; margin: 0; color: var(--muted); }
+
+    /* Contato */
+    .contact { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(40px, 6vw, 90px); align-items: start; }
+    .contact__list { list-style: none; padding: 0; margin: 2rem 0 0; }
+    .contact__list li { padding: 1rem 0; border-top: 1px solid var(--line); display: flex; flex-direction: column; }
+    .contact__list span { font-size: .68rem; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); }
+    .contact__list a:hover { color: var(--gold-light); }
+    .contact__list address { font-style: normal; }
+
+    .form { background: var(--black); border: 1px solid var(--line); padding: clamp(24px, 4vw, 44px); }
+    .form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; }
+    .form__row { display: flex; flex-direction: column; margin-bottom: 1.2rem; }
+    .form label { font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: .5rem; }
+    .form input:not([type="checkbox"]), .form select, .form textarea {
+      font: inherit; font-weight: 400; color: var(--text); background: var(--black-3);
+      border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: .9rem 1rem; width: 100%;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .form select {
+      appearance: none;
+      background-image: linear-gradient(45deg, transparent 50%, var(--gold) 50%), linear-gradient(135deg, var(--gold) 50%, transparent 50%);
+      background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%; background-size: 5px 5px; background-repeat: no-repeat;
+    }
+    .form textarea { resize: vertical; }
+    .form input:not([type="checkbox"]):focus, .form select:focus, .form textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,175,90,.15); }
+    .form__consent input:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+    .form :is(input, select, textarea)[aria-invalid="true"],
+    .form :is(input, select, textarea)[aria-invalid="true"]:focus { border-color: #c0584a; }
+    .form__consent input[aria-invalid="true"] { outline: 2px solid #e07a6b; outline-offset: 2px; }
+    .form__consent { display: flex; gap: .7rem; align-items: flex-start; cursor: pointer; }
+    .form label.form__consent { text-transform: none; letter-spacing: 0; font-size: .85rem; margin-bottom: 1.4rem; }
+    .form__consent input { accent-color: var(--gold); margin-top: .35em; }
+    .form__consent a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 2px; }
+    .form__msg { margin: 1rem 0 0; font-size: .9rem; color: var(--gold-light); min-height: 1.4em; }
+    .form__msg.is-error { color: #f0a094; }
+
+    /* Rodapé */
+    .footer { padding: 4rem 0 6.5rem; border-top: 1px solid var(--line); text-align: center; }
+    .footer__inner { display: flex; flex-direction: column; align-items: center; gap: .8rem; }
+    .footer__logo { width: 150px; height: auto; aspect-ratio: 300 / 110; }
+    .footer .hero__brand { font-size: .72rem; margin: 0 0 .6rem; }
+    .footer__nap { margin: 1.2rem 0 0; font-size: .8rem; color: var(--muted); }
+    .footer__nap a:hover, .footer__legal a:hover { color: var(--gold-light); }
+    .footer__legal { margin: .6rem 0 0; font-size: .74rem; color: var(--muted); opacity: .75; }
+    .footer__legal a { text-decoration: underline; text-underline-offset: 2px; }
+    .tri { display: inline-block; width: .62em; height: .57em; fill: var(--gold); vertical-align: baseline; }
+    .footer__legal .tri { margin: 0 .2em; }
+
+    /* WhatsApp flutuante */
+    .wa-float {
+      position: fixed; right: 22px; bottom: 22px; z-index: 60; width: 58px; height: 58px; border-radius: 50%;
+      display: grid; place-items: center; color: #111; background: var(--gold-btn);
+      box-shadow: 0 10px 30px -6px rgba(212,175,90,.6); transition: transform .25s;
+    }
+    .wa-float:hover { transform: scale(1.08); }
+
+    /* Animação de entrada */
+    .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+    .js .reveal.is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .reveal { opacity: 1; transform: none; transition: none; }
+    }
+    @media print {
+      .js .reveal { opacity: 1; transform: none; transition: none; }
+      .header, .wa-float, .nav-toggle { display: none; }
+    }
+
+    /* ===== Responsivo ===== */
+    @media (max-width: 1180px) and (min-width: 1001px) {
+      .vision__portico { right: 3%; height: 70%; }
+    }
+    @media (max-width: 1000px) {
+      .areas { grid-template-columns: repeat(2, 1fr); }
+      .diff, .contact, .context__grid { grid-template-columns: 1fr; }
+      .vision__portico { opacity: .15; right: -40px; }
+      .brand__name { display: none; }
+      .nav { gap: 1.4rem; }
+    }
+    @media (max-width: 820px) {
+      .nav-toggle { display: block; }
+      .nav {
+        position: fixed; inset: var(--header-h) 0 auto; flex-direction: column; align-items: stretch; gap: 0;
+        background: rgba(10,10,10,.98); border-bottom: 1px solid var(--line); padding: .5rem 16px 1.5rem;
+        transform: translateY(-120%); opacity: 0; pointer-events: none; visibility: hidden;
+        transition: transform .35s, opacity .35s, visibility 0s .35s;
+      }
+      .nav.is-open { transform: none; opacity: 1; pointer-events: auto; visibility: visible; transition-delay: 0s; }
+      .nav a:not(.btn) { padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,.06); }
+      .nav .btn { margin-top: 1.2rem; }
+      .header, .header.is-scrolled { background: rgba(10,10,10,.96); backdrop-filter: none; }
+      .pillars { grid-template-columns: repeat(2, 1fr); }
+      .pillars li:nth-child(3) { border-left: 0; }
+      .pillars li:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .closing__words { display: none; }
+      .hero::after { background: linear-gradient(180deg, rgba(10,10,10,.6), rgba(10,10,10,.2) 60%, rgba(10,10,10,0)); }
+      .hero__sun { right: 30%; width: 380px; height: 380px; }
+      .closing__sun { top: 58%; opacity: .8; }
+    }
+    @media (max-width: 560px) {
+      .areas, .form__grid { grid-template-columns: 1fr; }
+      .hero__actions .btn { width: 100%; }
+      .hero__inner { padding-bottom: 26vh; }
+      .hero__rio { height: 30%; }
+      .brand__name { display: none; }
+      .tagline { letter-spacing: .16em; gap: .4rem .6rem; }
+      .hero__tagline { padding-inline: 16px; }
+      .closing__foot { flex-direction: column; align-items: center; }
+      .closing__motto { margin: 1rem auto 0; text-align: center; }
+      .diff__list li { letter-spacing: .2em; }
+    }
+    @media (max-width: 340px) {
+      .tagline i { display: none; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.mbladvocacia.com.br/#website",
+      "url": "https://www.mbladvocacia.com.br/",
+      "name": "MBL Advocacia Estratégica",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://www.mbladvocacia.com.br/#escritorio"
+      }
+    },
+    {
+      "@type": "LegalService",
+      "@id": "https://www.mbladvocacia.com.br/#escritorio",
+      "name": "MBL Advocacia Estratégica",
+      "description": "Escritório de advocacia no Rio de Janeiro com atuação em consultoria jurídica empresarial, contratos, direito societário, reestruturação de empresas e contencioso cível e empresarial, com atendimento em todo o Brasil.",
+      "url": "https://www.mbladvocacia.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.mbladvocacia.com.br/#logo",
+        "url": "https://www.mbladvocacia.com.br/assets/icon-512.png",
+        "contentUrl": "https://www.mbladvocacia.com.br/assets/icon-512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "MBL Advocacia Estratégica"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.mbladvocacia.com.br/assets/og-image.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "telephone": "+55-21-90000-0000",
+      "email": "contato@mbladvocacia.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Rio Branco, 000 – Centro",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "postalCode": "20000-000",
+        "addressCountry": "BR"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Rio de Janeiro",
+          "sameAs": "https://www.wikidata.org/wiki/Q8678"
+        },
+        {
+          "@type": "Country",
+          "name": "Brasil",
+          "sameAs": "https://www.wikidata.org/wiki/Q155"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "knowsAbout": [
+        "Direito Empresarial",
+        "Contratos e Negócios",
+        "Reestruturação e Recuperação de Empresas",
+        "Direito Societário e Patrimonial",
+        "Contencioso Cível e Empresarial",
+        "Consultoria e Assessoria Jurídica"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "OAB/RJ",
+        "value": "000.000"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mbladvocacia.com.br/#faq",
+      "url": "https://www.mbladvocacia.com.br/",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://www.mbladvocacia.com.br/#website"
+      },
+      "about": {
+        "@id": "https://www.mbladvocacia.com.br/#escritorio"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Vocês atendem apenas no Rio de Janeiro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nosso escritório fica no Centro do Rio de Janeiro, com atendimento presencial, e atendemos clientes em todo o Brasil de forma online."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Atendem empresas e pessoas físicas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Atuamos para empresas de diferentes portes, sócios, investidores e pessoas físicas, tanto na consultoria quanto no contencioso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o retorno após o primeiro contato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Respondemos em dias úteis, dentro do horário de atendimento, para agendar uma conversa inicial. Durante o caso, você recebe atualizações a cada movimentação relevante."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como são definidos os honorários?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os honorários são definidos após a análise inicial, conforme a complexidade do caso e observada a tabela de honorários da OAB/RJ."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -80,7 +621,7 @@
     <div class="container header__inner">
       <a href="#top" class="brand" aria-label="MBL Advocacia Estratégica — início">
         <svg class="brand__logo" viewBox="0 0 300 110" aria-hidden="true"><use href="#logo"/></svg>
-        <span class="brand__name">Advocacia<br>Estratégica</span>
+        <span class="brand__name">Advocacia<br> Estratégica</span>
       </a>
       <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
         <span></span><span></span><span></span>
@@ -88,7 +629,7 @@
       <nav class="nav" id="menu">
         <a href="#visao">Visão</a>
         <a href="#atuacao">Atuação</a>
-        <a href="#diferencial">Diferencial</a>
+        <a href="#diferencial">Método</a>
         <a href="#faq">Dúvidas</a>
         <a href="#contato" class="btn btn--outline btn--sm">Fale conosco</a>
       </nav>
@@ -104,11 +645,12 @@
         <svg class="hero__logo" viewBox="0 0 300 110" role="img" aria-label="MBL"><use href="#logo"/></svg>
         <p class="hero__brand">Advocacia Estratégica</p>
         <span class="rule" aria-hidden="true"></span>
-        <h1 class="hero__title">Experiência a favor<br>do <span class="gold">seu futuro.</span></h1>
+        <p class="eyebrow hero__eyebrow">Escritório de advocacia no Rio&nbsp;de&nbsp;Janeiro</p>
+        <h1 class="hero__title">Experiência a favor<br> do <span class="gold">seu futuro.</span></h1>
         <p class="hero__lead">
-          Consultoria e contencioso com visão estratégica, respostas ágeis e
-          eficiência reconhecida. Resolvemos problemas jurídicos com rapidez
-          para que você decida com segurança.
+          Consultoria jurídica e contencioso cível e empresarial, com análise técnica,
+          visão estratégica e comunicação clara em cada etapa, para que você tome
+          decisões bem informadas.
         </p>
         <div class="hero__actions">
           <a href="https://wa.me/5521900000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20MBL%20Advocacia." class="btn btn--gold" target="_blank" rel="noopener">Agendar consulta</a>
@@ -122,7 +664,7 @@
     <section class="section context">
       <div class="container context__grid">
         <div class="reveal">
-          <h2 class="title">Todo negócio tem<br>decisões que podem<br>mudar <span class="gold">o seu futuro.</span></h2>
+          <h2 class="title">Todo negócio tem<br> decisões que podem<br> mudar <span class="gold">o seu futuro.</span></h2>
           <span class="rule" aria-hidden="true"></span>
         </div>
         <div class="reveal">
@@ -148,7 +690,7 @@
       <div class="container vision__inner">
         <div class="reveal">
           <p class="eyebrow">Nossa visão</p>
-          <h2 class="title">Direito não é<br><span class="gold">apenas reação.</span></h2>
+          <h2 class="title">Direito não é<br> <span class="gold">apenas reação.</span></h2>
           <span class="rule" aria-hidden="true"></span>
           <p class="lead">Uma atuação jurídica estratégica começa antes do problema.</p>
           <ul class="vision__list">
@@ -183,40 +725,40 @@
     <section class="section section--alt" id="atuacao">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow">Nossa atuação</p>
-          <h2 class="title">Uma visão integrada<br><span class="gold">do Direito.</span></h2>
+          <p class="eyebrow">Áreas de atuação</p>
+          <h2 class="title">Uma visão integrada<br> <span class="gold">do Direito.</span></h2>
           <p class="lead">Da consultoria preventiva ao contencioso, cada frente conversa com a outra para proteger você e o seu negócio.</p>
         </div>
         <div class="areas">
           <article class="area reveal">
             <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-empresarial"/></svg>
             <h3>Direito Empresarial</h3>
-            <p>Assessoria contínua para empresas, da estruturação às decisões do dia a dia.</p>
+            <p>Assessoria jurídica contínua para empresas, da estruturação às decisões do dia a dia.</p>
           </article>
           <article class="area reveal">
             <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-contratos"/></svg>
             <h3>Contratos e Negócios</h3>
-            <p>Elaboração, revisão e negociação de contratos com foco em segurança e viabilidade.</p>
+            <p>Elaboração, revisão e negociação de contratos empresariais, com foco em segurança jurídica e viabilidade.</p>
           </article>
           <article class="area reveal">
             <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-reestruturacao"/></svg>
-            <h3>Reestruturação e Recuperação</h3>
-            <p>Planejamento e condução de reestruturações para atravessar momentos críticos.</p>
+            <h3>Reestruturação e Recuperação de Empresas</h3>
+            <p>Planejamento e condução de reestruturações, inclusive recuperação judicial e extrajudicial, em momentos críticos.</p>
           </article>
           <article class="area reveal">
             <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-societario"/></svg>
-            <h3>Patrimonial e Societário</h3>
-            <p>Organização societária, acordos entre sócios e proteção patrimonial.</p>
+            <h3>Direito Societário e Patrimonial</h3>
+            <p>Organização societária, acordos de sócios e planejamento patrimonial.</p>
           </article>
           <article class="area reveal">
             <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-processual"/></svg>
-            <h3>Estratégia Processual</h3>
-            <p>Contencioso cível e empresarial conduzido com estratégia, firmeza e celeridade.</p>
+            <h3>Contencioso Cível e Empresarial</h3>
+            <p>Estratégia processual em ações judiciais, da avaliação de riscos à condução do processo.</p>
           </article>
           <article class="area reveal">
             <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-consultoria"/></svg>
             <h3>Consultoria e Assessoria Jurídica</h3>
-            <p>Pareceres, análise de riscos e orientação para decisões seguras.</p>
+            <p>Pareceres, análise de riscos e orientação jurídica para decisões bem fundamentadas.</p>
           </article>
         </div>
         <p class="tagline areas__foot reveal">Diferentes desafios. <span class="gold">Uma só direção: o seu futuro.</span></p>
@@ -227,8 +769,8 @@
     <section class="section" id="diferencial">
       <div class="container diff">
         <div class="reveal">
-          <p class="eyebrow">Nosso diferencial</p>
-          <h2 class="title">Experiência a favor<br><span class="gold">do seu futuro.</span></h2>
+          <p class="eyebrow">Nosso método</p>
+          <h2 class="title">Como conduzimos<br> <span class="gold">cada caso.</span></h2>
           <span class="rule" aria-hidden="true"></span>
           <p class="lead">Na MBL, cada questão jurídica exige:</p>
           <ul class="diff__list">
@@ -239,10 +781,10 @@
           <p class="muted">Porque decisões relevantes não devem ser tomadas sem compreender suas consequências jurídicas.</p>
         </div>
         <ol class="steps reveal" aria-label="Como trabalhamos">
-          <li><span aria-hidden="true">01</span><div><h3>Contato</h3><p>Você nos conta o problema. Retornamos em até 24 horas úteis.</p></div></li>
+          <li><span aria-hidden="true">01</span><div><h3>Contato</h3><p>Você nos conta o problema e agendamos uma conversa inicial.</p></div></li>
           <li><span aria-hidden="true">02</span><div><h3>Diagnóstico</h3><p>Análise técnica do cenário, dos riscos e dos prazos envolvidos.</p></div></li>
-          <li><span aria-hidden="true">03</span><div><h3>Estratégia</h3><p>Definimos juntos o caminho mais rápido e eficiente para a solução.</p></div></li>
-          <li><span aria-hidden="true">04</span><div><h3>Execução</h3><p>Conduzimos o caso de ponta a ponta, com atualizações constantes.</p></div></li>
+          <li><span aria-hidden="true">03</span><div><h3>Estratégia</h3><p>Definimos juntos o caminho adequado ao seu caso, com riscos e alternativas apresentados com clareza.</p></div></li>
+          <li><span aria-hidden="true">04</span><div><h3>Execução</h3><p>Conduzimos o caso de ponta a ponta, com atualizações a cada movimentação relevante.</p></div></li>
         </ol>
       </div>
     </section>
@@ -252,7 +794,7 @@
       <div class="closing__sun" aria-hidden="true"></div>
       <svg class="closing__rio" aria-hidden="true"><use href="#rio"/></svg>
       <ul class="closing__words" aria-hidden="true">
-        <li>Pessoas</li><li>Ideias</li><li>Estratégia</li><li>Resultados</li><li>Um futuro</li><li>mais seguro</li>
+        <li>Pessoas</li><li>Ideias</li><li>Estratégia</li><li>Resultados</li><li>Um futuro</li><li>em construção</li>
       </ul>
       <div class="container closing__inner reveal">
         <svg class="closing__logo" viewBox="0 0 300 110" role="img" aria-label="MBL"><use href="#logo"/></svg>
@@ -265,7 +807,7 @@
       <div class="container closing__foot">
         <span><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>Rio de Janeiro – RJ</span>
         <span><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-brasil"/></svg>Atendimento em todo o Brasil</span>
-        <span class="closing__motto">Mais que Direito,<br>parceria para o seu futuro.</span>
+        <span class="closing__motto">Mais que Direito,<br> parceria para o seu futuro.</span>
       </div>
     </section>
 
@@ -273,25 +815,25 @@
     <section class="section" id="faq">
       <div class="container container--narrow">
         <div class="section__head reveal">
-          <p class="eyebrow">Dúvidas frequentes</p>
-          <h2 class="title">Perguntas comuns</h2>
+          <p class="eyebrow">Dúvidas</p>
+          <h2 class="title">Perguntas frequentes</h2>
         </div>
         <div class="faq">
           <details class="reveal">
             <summary>Vocês atendem apenas no Rio de Janeiro?</summary>
-            <p>Nossa sede fica no Rio de Janeiro, com atendimento presencial, e atendemos clientes em todo o Brasil de forma online.</p>
+            <p>Nosso escritório fica no Centro do Rio de Janeiro, com atendimento presencial, e atendemos clientes em todo o Brasil de forma online.</p>
           </details>
           <details class="reveal">
             <summary>Atendem empresas e pessoas físicas?</summary>
             <p>Sim. Atuamos para empresas de diferentes portes, sócios, investidores e pessoas físicas, tanto na consultoria quanto no contencioso.</p>
           </details>
           <details class="reveal">
-            <summary>Quanto tempo leva para ter um retorno?</summary>
-            <p>O primeiro retorno é feito em até 24 horas úteis. Durante o caso, você recebe atualizações a cada movimentação relevante.</p>
+            <summary>Como funciona o retorno após o primeiro contato?</summary>
+            <p>Respondemos em dias úteis, dentro do horário de atendimento, para agendar uma conversa inicial. Durante o caso, você recebe atualizações a cada movimentação relevante.</p>
           </details>
           <details class="reveal">
             <summary>Como são definidos os honorários?</summary>
-            <p>Os honorários são apresentados de forma transparente após a análise inicial, conforme a complexidade do caso e a tabela da OAB/RJ.</p>
+            <p>Os honorários são definidos após a análise inicial, conforme a complexidade do caso e observada a tabela de honorários da OAB/RJ.</p>
           </details>
         </div>
       </div>
@@ -302,12 +844,12 @@
       <div class="container contact">
         <div class="contact__info reveal">
           <p class="eyebrow">Contato</p>
-          <h2 class="title">Vamos conversar sobre<br><span class="gold">o seu caso.</span></h2>
-          <p class="lead">Preencha o formulário ou fale diretamente pelos canais abaixo.</p>
+          <h2 class="title">Vamos conversar sobre<br> <span class="gold">o seu caso.</span></h2>
+          <p class="lead">Atendimento presencial no Centro do Rio de Janeiro e online em todo o Brasil. Preencha o formulário ou fale diretamente pelos canais abaixo.</p>
           <ul class="contact__list">
             <li><span>WhatsApp</span><a href="https://wa.me/5521900000000" target="_blank" rel="noopener">(21) 90000-0000</a></li>
             <li><span>E-mail</span><a href="mailto:contato@mbladvocacia.com.br">contato@mbladvocacia.com.br</a></li>
-            <li><span>Endereço</span>Av. Rio Branco, 000 — Centro, Rio de Janeiro/RJ</li>
+            <li><span>Endereço</span><address>Av. Rio Branco, 000 – Centro, Rio de Janeiro – RJ, 20000-000</address></li>
             <li><span>Horário</span>Segunda a sexta, 9h às 18h</li>
           </ul>
         </div>
@@ -333,9 +875,9 @@
               <option value="" disabled selected>Selecione</option>
               <option>Direito Empresarial</option>
               <option>Contratos e Negócios</option>
-              <option>Reestruturação e Recuperação</option>
-              <option>Patrimonial e Societário</option>
-              <option>Estratégia Processual (contencioso)</option>
+              <option>Reestruturação e Recuperação de Empresas</option>
+              <option>Direito Societário e Patrimonial</option>
+              <option>Contencioso Cível e Empresarial</option>
               <option>Consultoria e Assessoria Jurídica</option>
               <option>Outro assunto</option>
             </select>
@@ -346,7 +888,7 @@
           </div>
           <label class="form__consent">
             <input type="checkbox" name="consentimento" required>
-            <span>Concordo com o uso dos meus dados para retorno do contato, conforme a LGPD.</span>
+            <span>Concordo com o uso dos meus dados para retorno do contato, conforme a <a href="privacidade.html">Política de Privacidade</a> (LGPD).</span>
           </label>
           <button type="submit" class="btn btn--gold btn--block">Enviar pelo WhatsApp</button>
           <p class="form__msg" role="status" aria-live="polite"></p>
@@ -361,7 +903,8 @@
       <svg class="footer__logo" viewBox="0 0 300 110" role="img" aria-label="MBL"><use href="#logo"/></svg>
       <p class="hero__brand">Advocacia Estratégica</p>
       <p class="tagline">Soluções <i></i> Negócios <i></i> Resultados</p>
-      <p class="footer__legal">OAB/RJ nº 000.000 <svg class="tri" aria-hidden="true" focusable="false"><use href="#i-tri"/></svg> © <span id="ano">2026</span> MBL Advocacia Estratégica. Todos os direitos reservados.</p>
+      <p class="footer__nap">MBL Advocacia Estratégica · Av. Rio Branco, 000 – Centro, Rio de Janeiro – RJ, 20000-000 · <a href="tel:+5521900000000">(21) 90000-0000</a></p>
+      <p class="footer__legal">OAB/RJ nº 000.000 <svg class="tri" aria-hidden="true" focusable="false"><use href="#i-tri"/></svg> © <span id="ano">2026</span> MBL Advocacia Estratégica. Todos os direitos reservados. <a href="privacidade.html">Privacidade</a></p>
     </div>
     <a href="https://wa.me/5521900000000" class="wa-float" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
     <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.38 4 15.02c0 2.12.56 4.19 1.62 6.01L4 29l8.17-1.6a12 12 0 0 0 3.87.64C22.67 28.04 28 22.66 28 16.02 28 9.38 22.67 3 16.04 3Zm0 22.9c-1.26 0-2.5-.22-3.67-.66l-.26-.1-4.85.95.97-4.72-.17-.28a9.86 9.86 0 0 1-1.52-5.27c0-5.47 4.47-9.93 9.5-9.93 5.52 0 9.8 4.46 9.8 9.93 0 5.6-4.28 10.08-9.8 10.08Zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>

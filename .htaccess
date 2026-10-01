@@ -1,4 +1,17 @@
-# Hostinger / Apache / LiteSpeed — compressão e cache
+# Hostinger / Apache / LiteSpeed — compressão, cache e redirecionamentos
+# Não envie README.md nem a pasta .git para a hospedagem.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # /index.html -> / (evita página duplicada)
+  RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ / [L,R=301]
+  # Ative SOMENTE depois que o domínio apontar para a hospedagem
+  # (ou use "Forçar HTTPS" no hPanel):
+  # RewriteCond %{HTTPS} !=on [OR]
+  # RewriteCond %{HTTP_HOST} !^www\.mbladvocacia\.com\.br$ [NC]
+  # RewriteRule ^ https://www.mbladvocacia.com.br%{REQUEST_URI} [L,R=301,NE]
+</IfModule>
 AddType font/woff2 .woff2
 AddType application/manifest+json .webmanifest
 
