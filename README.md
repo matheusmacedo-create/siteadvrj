@@ -69,5 +69,4 @@ de compliance do escritório antes de publicar.
 - Fontes: Cinzel (títulos) e Montserrat (texto)
 - Assinatura: "Experiência a favor do seu futuro" · Soluções | Negócios | Resultados
 - Ilustração do Pão de Açúcar ao pôr do sol em SVG (`<symbol id="rio">`); pode ser trocada por foto real
-- Emblema de esquadro e compasso com G (`<symbol id="i-emblema">`) no divisor do topo e do fechamento, como no logo
-- Ornamentos clássicos: pórtico de duas colunas (seção Visão), ícones de nível, esquadro e prumo (Método) e vinheta de três pontos no rodapé
+- Ornamentos clássicos discretos: pórtico de duas colunas (seção Visão), ícones de nível, esquadro e prumo (Método) e vinheta de três pontos no rodapé
