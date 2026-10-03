@@ -9,8 +9,8 @@
   # Ative SOMENTE depois que o domínio apontar para a hospedagem
   # (ou use "Forçar HTTPS" no hPanel):
   # RewriteCond %{HTTPS} !=on [OR]
-  # RewriteCond %{HTTP_HOST} !^www\.mbladvocacia\.com\.br$ [NC]
-  # RewriteRule ^ https://www.mbladvocacia.com.br%{REQUEST_URI} [L,R=301,NE]
+  # RewriteCond %{HTTP_HOST} !^www\.lmbadvocacia\.com\.br$ [NC]
+  # RewriteRule ^ https://www.lmbadvocacia.com.br%{REQUEST_URI} [L,R=301,NE]
 </IfModule>
 AddType font/woff2 .woff2
 AddType application/manifest+json .webmanifest

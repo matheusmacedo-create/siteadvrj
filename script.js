@@ -82,7 +82,7 @@ form.addEventListener("submit", (e) => {
   msg.classList.remove("is-error");
   const d = new FormData(form);
   const texto =
-    `Olá, MBL Advocacia Estratégica!\n\n` +
+    `Olá, LMB Advocacia Estratégica!\n\n` +
     `*Nome:* ${d.get("nome")}\n` +
     `*Telefone:* ${d.get("telefone")}\n` +
     `*E-mail:* ${d.get("email")}\n` +

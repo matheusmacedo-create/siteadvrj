@@ -1,6 +1,6 @@
-# MBL Advocacia Estratégica — Landing Page
+# LMB Advocacia Estratégica — Landing Page
 
-Site estático (HTML + CSS + JS, sem dependências nem etapa de build) da MBL
+Site estático (HTML + CSS + JS, sem dependências nem etapa de build) da LMB
 Advocacia Estratégica, escritório no Rio de Janeiro com atuação em consultoria
 e contencioso. Identidade visual preto e dourado.
 
@@ -30,18 +30,18 @@ inscrição na OAB é exigida pelo Código de Ética (art. 44).
 
 | Item | Onde |
 |------|------|
-| WhatsApp (`5521900000000`) | `index.html`: os 4 links `wa.me` (botão do topo, CTA "Falar com a MBL", lista de `#contato` e botão flutuante `.wa-float`). O `script.js` lê o número do botão flutuante, não há constante a editar |
+| WhatsApp (`5521900000000`) | `index.html`: os 4 links `wa.me` (botão do topo, CTA "Falar com a LMB", lista de `#contato` e botão flutuante `.wa-float`). O `script.js` lê o número do botão flutuante, não há constante a editar |
 | Telefone visível `(21) 90000-0000` | `index.html`: lista de `#contato`, link `tel:` do rodapé (`.footer__nap`) e `"telephone"` no JSON-LD |
 | E-mail | `index.html`: `#contato` (`mailto:`) e `"email"` no JSON-LD; `privacidade.html` (direitos do titular) |
 | Endereço e CEP | `index.html`: `<address>` em `#contato`, `.footer__nap` e `"address"` no JSON-LD. Se o escritório não for no Centro, ajuste também a resposta 1 do FAQ, o texto de `#contato` e o JSON-LD |
 | Horário | `index.html`: lista de `#contato` e `"openingHoursSpecification"` no JSON-LD |
 | Razão social e nº da OAB/RJ (`000.000`) | `index.html`: `.footer__legal`, `"legalName"` e `"identifier"` no JSON-LD; rodapé (`.foot`) de `404.html` e `privacidade.html`; 1º parágrafo de `privacidade.html` (com CNPJ). Se não houver sociedade registrada, use o nome completo do advogado responsável |
-| Domínio (`www.mbladvocacia.com.br`, **ainda não registrado**) | `index.html`: `canonical`, `og:url`, `og:image` e todos os `@id`/`url` do JSON-LD; canonical de `privacidade.html`; `robots.txt`; `sitemap.xml`; regra comentada de `www` no `.htaccess` |
+| Domínio (`www.lmbadvocacia.com.br`, **ainda não registrado**) | `index.html`: `canonical`, `og:url`, `og:image` e todos os `@id`/`url` do JSON-LD; canonical de `privacidade.html`; `robots.txt`; `sitemap.xml`; regra comentada de `www` no `.htaccess` |
 
 Para conferir se sobrou algum dado provisório:
 
 ```bash
-grep -rnE "5521900000000|90000-0000|000\.000|Rio Branco, 000|20000-000|00\.000\.000|Razão social registrada|mbladvocacia" --exclude=README.md --exclude-dir=.git .
+grep -rnE "5521900000000|90000-0000|000\.000|Rio Branco, 000|20000-000|00\.000\.000|Razão social registrada|lmbadvocacia" --exclude=README.md --exclude-dir=.git .
 ```
 
 Ao editar textos, mantenha sincronizados:
@@ -65,8 +65,9 @@ de compliance do escritório antes de publicar.
 
 ## Identidade visual
 
-- Logo "MBL" com curva dourada, em SVG com as letras em contorno (`<symbol id="logo">` em `index.html`, `404.html` e `privacidade.html`; o favicon, os ícones e a `og-image.jpg` são exportações dele)
+- Logo "LMB" com curva dourada, em SVG com as letras em contorno (`<symbol id="logo">` em `index.html`, `404.html` e `privacidade.html`; o favicon, os ícones e a `og-image.jpg` são exportações dele)
 - Fontes: Cinzel (títulos) e Montserrat (texto)
 - Assinatura: "Experiência a favor do seu futuro" · Soluções | Negócios | Resultados
 - Ilustração do Pão de Açúcar ao pôr do sol em SVG (`<symbol id="rio">`); pode ser trocada por foto real
-- Ornamentos clássicos discretos: pórtico de duas colunas (seção Visão), ícones de nível, esquadro e prumo (Método) e vinheta de três pontos no rodapé
+- Emblema de esquadro e compasso com G (`<symbol id="i-emblema">`) no divisor do topo e do fechamento, como no logo
+- Ornamentos clássicos: pórtico de duas colunas (seção Visão), ícones de nível, esquadro e prumo (Método) e vinheta de três pontos no rodapé
